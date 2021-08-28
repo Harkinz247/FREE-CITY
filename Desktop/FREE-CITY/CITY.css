@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'my headings';
+    src: url("WEBDEV/fonts/Righteous/Righteous-Regular.ttf");
+}
+
+body {
+    background-image: url("WEBDEV/6351762.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 95%;
+    overflow: hidden;
+    height: 1000px;
+
+}
+
+.container1 {
+    display: block;
+    padding: 10px;
+    float: left;
+    width: 95%;
+}
+
+.container1 a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.container1 a:hover {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: hsl(204, 100%, 50%);
+    border-radius: 15px;
+    transition: 0.5s ease;
+}
+
+.search-float {
+    float: right;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    padding: 0px 15px;
+    margin-top: 0px;
+}
+
+input[type='text'], input[type='password'] {
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+input[type='submit'] {
+    border: none;
+    border-bottom: 5px solid hsl(204, 100%, 50%);
+    color: white;
+    background-color: transparent;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.container-2 {
+    text-align: center;
+    margin: 100px 100px 0px 100px;
+    height: 500px;
+}
+
+.innercontainer {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.innercontainer h1 {
+    font-family: 'my headings', Ri;
+    color: white;
+}
+
+.btn {
+    color: white;
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    *{
+        text-align: center;
+    }
+     .container1  a.btn {
+        background-color: transparent;
+        border: none;
+        display: block;
+        text-align: center;
+        font-size: 30px;
+         top: 0px;
+        margin: auto;
+    }
+
+    .container-2 {
+        display: block;
+        text-align: center;
+    }
+    .container1{
+         display: block;
+        text-align: center;
+        position: fixed;
+
+
+
+
+    }
+
+    .container1 a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        display: none;
+        position: relative;
+
+    }
+    .container1 .search-float input[type='text']{
+        text-align: left;
+        display: none;
+    }
+    .search-float label{
+        text-align: center;
+        margin-right: 135px;
+        display: none;
+    }
+
+}
